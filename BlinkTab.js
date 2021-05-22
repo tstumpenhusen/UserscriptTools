@@ -1,4 +1,4 @@
-function blinkTab(var message, var times, var milliseconds) {
+function blinkTab(message, times, milliseconds) {
 	var originalWindowTitle = document.title;
 	var count = 0;
 	
@@ -16,5 +16,3 @@ function blinkTab(var message, var times, var milliseconds) {
 }
 
 window.blinkTab = blinkTab;
-
-console.log("loaded");
