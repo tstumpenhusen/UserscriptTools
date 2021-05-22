@@ -12,7 +12,7 @@ function blinkTab(message, times, milliseconds) {
 		
 		document.title = document.title == message ? originalWindowTitle : message;
 		count++;
-	}, duration);
+	}, milliseconds);
 }
 
 window.blinkTab = blinkTab;
