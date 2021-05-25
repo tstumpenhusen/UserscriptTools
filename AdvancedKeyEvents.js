@@ -1,4 +1,4 @@
-function keyMatches(modifierKeys, e) {
+function modifiersMatch(modifierKeys, e) {
 	var comboParts = modifierKeys
 		.split("+")
 		.map(key => key.trim());
