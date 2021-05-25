@@ -21,7 +21,7 @@ function keyMatches(modifierKeys, e) {
 }
 
 document.addAdvancedEventListener = function(modifiers, eventName, func) {
-	document.addEventListener(keyEvent, e => {
+	document.addEventListener(eventName, e => {
 		if (modifiersMatch(modifiers, e)) {
 			func(e);
 		}
