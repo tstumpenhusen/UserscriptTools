@@ -5,15 +5,15 @@ function modifiersMatch(modifierKeys, e) {
 	
 	comboParts = comboParts.map(part => part.toLowerCase());
 
-	if (comboParts.indexOf("ctrl") > 0 && !e.ctrlKey) {
+	if (comboParts.indexOf("ctrl") != -1 && !e.ctrlKey) {
 		return false;
 	}
 	
-	if (comboParts.indexOf("alt") > 0 && !e.altKey) {
+	if (comboParts.indexOf("alt") != -1 && !e.altKey) {
 		return false;
 	}
 	
-	if (comboParts.indexOf("shift") > 0 && !e.shiftKey) {
+	if (comboParts.indexOf("shift") != -1 && !e.shiftKey) {
 		return false;
 	}
 	
